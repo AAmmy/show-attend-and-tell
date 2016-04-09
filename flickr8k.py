@@ -7,7 +7,7 @@ import time
 import numpy
 from scipy.io import loadmat
 
-feat_path = '../flickr8k/196x512_perfile_dense_name_resizecrop/'
+feat_path = 'data/flickr8k/196x512_perfile_dense_name_resizecrop/'
 
 def prepare_data(caps, features, worddict, maxlen=None, n_words=10000, zero_pad=False):
     # x: a list of sentences
