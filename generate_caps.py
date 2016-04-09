@@ -42,7 +42,7 @@ def re_gen(y):
 
 def example_code():
     cap_path='data/flickr8k/flicker_8k_cap.test.pkl'
-    feat_path = '../flickr8k/196x512_perfile_dense_name_resizecrop/'
+    feat_path = 'data/flickr8k/196x512_perfile_dense_name_resizecrop/'
     test_cap = pkl.load(open(cap_path, 'rb'))
 
     feat_list = []
@@ -57,7 +57,7 @@ def example_code():
 def calc_flickr8k_BLUE():
     import bleu
     cap_path = 'data/flickr8k/flicker_8k_cap.test.pkl'
-    feat_path = '../flickr8k/196x512_perfile_dense_name_resizecrop/'
+    feat_path = 'data/flickr8k/196x512_perfile_dense_name_resizecrop/'
 
     test_cap = pkl.load(open(cap_path, 'rb'))
     r_c = {} # key:image file name, value:captions list
